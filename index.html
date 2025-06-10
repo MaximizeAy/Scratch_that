@@ -31,49 +31,13 @@
       rel="stylesheet"
     />
 
-    <!-- Template Stylesheet -->
+    <!-- stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
   <body>
-    <!-- Foreground Image-->
-    <style>
-        body, html {
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-      height: 100%;
-    }
 
-    .foreground-video {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-      z-index: 1;
-    }
-
-    .content {
-      position: relative;
-      z-index: 2;
-      max-width: 1200px;
-      width: 100%;
-      margin: 0 auto;
-      padding: 1rem;
-      box-sizing: border-box;
-      color: white;
-    }
-    </style>
-
-    <video class="foreground-video"src="IMG_1791.MP4" autoplay loop muted playsinline></video> */
-
-  
-
-    <!-- /* Foreground Image End */ -->
-    <div class="content"> Welcome to MovieVerse 🎬
-    <!-- Nav Bar Start --> */
+    <!-- Nav Bar Start --> 
     <div class="navbar navbar-expand-lg bg-light navbar-light">
       <div class="container-fluid">
         <a href="index.html" class="navbar-brand"> [Site] <span>Name</span></a>
@@ -116,6 +80,7 @@
     </div>
     <!-- Nav Bar End -->
 
+    <!-- Welcome Bar -->
     <div class="page-header mb-0">
       <div class="container">
         <div class="row">
@@ -136,7 +101,7 @@
         </div>
       </div>
     </div>
-    <!-- Peeping Animation End -->
+    <!-- Welcome Bar -->
 
     <!-- Booking Start -->
     <div class="booking">
@@ -169,6 +134,8 @@
               </div>
             </div>
           </div>
+
+          <!-- Booking Form -->
           <div class="col-lg-5">
             <div class="booking-form">
               <p>Lights. Camera. Book now. 🍿</p>
@@ -310,8 +277,7 @@
         <div class="row align-items-center">
           <div class="col-lg-6">
             <div class="about-img">
-              <img
-                src="img/about.jpg"
+              <img src="img/Screenshot 2025-06-10 004636.png"
                 class="img-thumb"
                 onclick="document.getElementById('imgModal').showModal()"
               />
@@ -337,23 +303,14 @@
           <div class="col-lg-6">
             <div class="about-content">
               <div class="section-header">
-                <p>About Us</p>
-                <h2>Cooking Since 1990</h2>
+                <p>🎬 About Us</p>
+                <h2>Take 5ive 📸</h2>
               </div>
               <div class="about-text">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec pretium mi. Curabitur facilisis ornare velit non
-                  vulputate. Aliquam metus tortor, auctor id gravida
-                  condimentum, viverra quis sem.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec pretium mi. Curabitur facilisis ornare velit non
-                  vulputate. Aliquam metus tortor, auctor id gravida
-                  condimentum, viverra quis sem. Curabitur non nisl nec nisi
-                  scelerisque maximus. Aenean consectetur convallis porttitor.
-                  Aliquam interdum at lacus non blandit.
+At [YourSiteName], storytelling is our heartbeat. We are a passionate team of filmmakers, creatives, and visionaries dedicated to crafting compelling cinematic experiences that move, inspire, and captivate audiences around the world.
+From indie gems to large-scale productions, we bring stories to life through powerful visuals, authentic narratives, and cutting-edge production. Whether it’s drama, documentary, or experimental film, our work is driven by a relentless pursuit of artistic excellence and emotional truth.
+Based in LeadCity University, we collaborate with global talent to produce films that leave a lasting impact — not just on screens, but in hearts.
                 </p>
                 <a class="btn custom-btn" href="">Book A Table</a>
               </div>
@@ -363,6 +320,9 @@
       </div>
     </div>
     <!-- About End -->
+
+    <!-- Use spacer div for custom spaces! -->
+    <div class="spacer" style="height: 35vh; /* adjust height as needed */"></div>
 
     <!-- Feature Start -->
     <div class="feature">
@@ -378,6 +338,7 @@
                 <div class="row">
                   <div class="col-6">
                     <img src="img/feature-1.jpg" alt="Image" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 1v22h24v-22h-24zm4 20h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm14 12h-12v-10h12v10zm4 4h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm-12 10v-6l5 3-5 3z"/></svg>
                   </div>
                   <div class="col-6">
                     <img src="img/feature-2.jpg" alt="Image" />
@@ -478,8 +439,8 @@
         <div class="row align-items-center">
           <div class="col-md-4">
             <div class="food-item">
-              <i class="flaticon-burger"></i>
-              <h2>Burgers</h2>
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjIgMXYyaC0ydi0yaC0ydjRoLTEydi00aC0ydjJoLTJ2LTJoLTJ2MjJoMnYtMmgydjJoMnYtNGgxMnY0aDJ2LTJoMnYyaDJ2LTIyaC0yem0tMTggMThoLTJ2LTJoMnYyem0wLTRoLTJ2LTJoMnYyem0wLTRoLTJ2LTJoMnYyem0wLTRoLTJ2LTJoMnYyem02IDh2LTZsNSAzLTUgM3ptMTIgNGgtMnYtMmgydjJ6bTAtNGgtMnYtMmgydjJ6bTAtNGgtMnYtMmgydjJ6bTAtNGgtMnYtMmgydjJ6Ii8+PC9zdmc+">
+              <h2>Movie Production</h2>
               <p>
                 Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit
                 facilis ornare velit non vulputa. Aliquam metus tortor auctor
@@ -490,8 +451,8 @@
           </div>
           <div class="col-md-4">
             <div class="food-item">
-              <i class="flaticon-snack"></i>
-              <h2>Snacks</h2>
+             <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTUuOTU1IDEzLjMzNGMtLjI0NS4wNTEtMS4zNzYuMDQyLTEuMzc2LjA0MmwuNjI0LTIuODNoLjczM2MyLjAzOC4wNDEgMS40MDEgMi41LjAxOSAyLjc4OHptOC4wNDUtNi4zMzR2MTBjMCAxLjY1Ny0xLjM0MyAzLTMgM2gtMThjLTEuNjU3IDAtMy0xLjM0My0zLTN2LTEwYzAtMS42NTcgMS4zNDMtMyAzLTNoMThjMS42NTcgMCAzIDEuMzQzIDMgM3ptLTEzLjAzNyA4bDEuMzQ5LTZoLTEuOTlsLS40MDggMS44aC0yLjE0NmwuNDA5LTEuOGgtMi4wMWwtMS4zNjcgNmgyLjAxOWwuNTUyLTIuNGgyLjEzN2wtLjUzNSAyLjRoMS45OXptNS4zOTktNmgtMi43OTdsLTEuMzMgNmgyLjM3YzEuMzM2IDAgMi44NDUuMDI1IDMuOTAxLTEuMzQzIDEuMTEyLTEuNDIgMS4yMDMtNC42NTctMi4xNDQtNC42NTd6Ii8+PC9zdmc+">
+              <h2>HD Quality</h2>
               <p>
                 Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit
                 facilis ornare velit non vulputa. Aliquam metus tortor auctor
@@ -502,8 +463,8 @@
           </div>
           <div class="col-md-4">
             <div class="food-item">
-              <i class="flaticon-cocktail"></i>
-              <h2>Beverages</h2>
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTUuOTEgMTMuMzRsMi42MzYtNC4wMjYtLjQ1NC0uNDA2LTMuNjczIDMuMDk5Yy0uNjc1LS4xMzgtMS40MDIuMDY4LTEuODk0LjYxOC0uNzM2LjgyMy0uNjY1IDIuMDg4LjE1OSAyLjgyNC44MjQuNzM2IDIuMDg4LjY2NSAyLjgyNC0uMTU5LjQ5Mi0uNTUuNjE1LTEuMjk1LjQwMi0xLjk1em0tMy45MS0xMC42NDZ2LTIuNjk0aDR2Mi42OTRjLTEuNDM5LS4yNDMtMi41OTItLjIzOC00IDB6bTguODUxIDIuMDY0bDEuNDA3LTEuNDA3IDEuNDE0IDEuNDE0LTEuMzIxIDEuMzIxYy0uNDYyLS40ODQtLjk2NC0uOTI3LTEuNS0xLjMyOHptLTE4Ljg1MSA0LjI0Mmg4djJoLTh2LTJ6bS0yIDRoOHYyaC04di0yem0zIDRoN3YyaC03di0yem0yMS0zYzAgNS41MjMtNC40NzcgMTAtMTAgMTAtMi43OSAwLTUuMy0xLjE1NS03LjExMS0zaDMuMjhjMS4xMzguNjMxIDIuNDM5IDEgMy44MzEgMSA0LjQxMSAwIDgtMy41ODkgOC04cy0zLjU4OS04LTgtOGMtMS4zOTIgMC0yLjY5My4zNjktMy44MzEgMWgtMy4yOGMxLjgxMS0xLjg0NSA0LjMyMS0zIDcuMTExLTMgNS41MjMgMCAxMCA0LjQ3NyAxMCAxMHoiLz48L3N2Zz4=">
+              <h2>Fast Streaming</h2>
               <p>
                 Lorem ipsum dolor sit amet elit. Phasel nec pretium mi. Curabit
                 facilis ornare velit non vulputa. Aliquam metus tortor auctor
@@ -771,6 +732,7 @@
           <h2>Our Master Chef</h2>
         </div>
         <div class="row">
+
           <div class="col-lg-3 col-md-6">
             <div class="team-item">
               <div class="team-img">
@@ -788,6 +750,115 @@
               </div>
             </div>
           </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/team-1.jpg" alt="Image" />
+                <div class="team-social">
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                  <a href=""><i class="fab fa-linkedin-in"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="team-text">
+                <h2>Adam Phillips</h2>
+                <p>CEO, Co Founder</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/team-1.jpg" alt="Image" />
+                <div class="team-social">
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                  <a href=""><i class="fab fa-linkedin-in"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="team-text">
+                <h2>Adam Phillips</h2>
+                <p>CEO, Co Founder</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/team-1.jpg" alt="Image" />
+                <div class="team-social">
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                  <a href=""><i class="fab fa-linkedin-in"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="team-text">
+                <h2>Adam Phillips</h2>
+                <p>CEO, Co Founder</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/team-1.jpg" alt="Image" />
+                <div class="team-social">
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                  <a href=""><i class="fab fa-linkedin-in"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="team-text">
+                <h2>Adam Phillips</h2>
+                <p>CEO, Co Founder</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/team-1.jpg" alt="Image" />
+                <div class="team-social">
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                  <a href=""><i class="fab fa-linkedin-in"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="team-text">
+                <h2>Adam Phillips</h2>
+                <p>CEO, Co Founder</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="team-item">
+              <div class="team-img">
+                <img src="img/team-1.jpg" alt="Image" />
+                <div class="team-social">
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                  <a href=""><i class="fab fa-linkedin-in"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="team-text">
+                <h2>Adam Phillips</h2>
+                <p>CEO, Co Founder</p>
+              </div>
+            </div>
+          </div>
+
           <div class="col-lg-3 col-md-6">
             <div class="team-item">
               <div class="team-img">
@@ -805,6 +876,8 @@
               </div>
             </div>
           </div>
+
+
           <div class="col-lg-3 col-md-6">
             <div class="team-item">
               <div class="team-img">
@@ -822,6 +895,8 @@
               </div>
             </div>
           </div>
+
+
           <div class="col-lg-3 col-md-6">
             <div class="team-item">
               <div class="team-img">
@@ -839,63 +914,46 @@
               </div>
             </div>
           </div>
+
+
         </div>
       </div>
     </div>
     <!-- Team End -->
 
     <!-- Testimonial Start -->
-    <div class="testimonial">
-      <div class="container">
-        <div class="owl-carousel testimonials-carousel">
-          <div class="testimonial-item">
-            <div class="testimonial-img">
-              <img src="img/testimonial-1.jpg" alt="Image" />
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit
-              facilis ornare velit non vulput
-            </p>
-            <h2>Client Name</h2>
-            <h3>Profession</h3>
-          </div>
-          <div class="testimonial-item">
-            <div class="testimonial-img">
-              <img src="img/testimonial-2.jpg" alt="Image" />
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit
-              facilis ornare velit non vulput
-            </p>
-            <h2>Client Name</h2>
-            <h3>Profession</h3>
-          </div>
-          <div class="testimonial-item">
-            <div class="testimonial-img">
-              <img src="img/testimonial-3.jpg" alt="Image" />
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit
-              facilis ornare velit non vulput
-            </p>
-            <h2>Client Name</h2>
-            <h3>Profession</h3>
-          </div>
-          <div class="testimonial-item">
-            <div class="testimonial-img">
-              <img src="img/testimonial-4.jpg" alt="Image" />
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet elit. Phasel nec preti mi. Curabit
-              facilis ornare velit non vulput
-            </p>
-            <h2>Client Name</h2>
-            <h3>Profession</h3>
-          </div>
-        </div>
-      </div>
+
+<div class="testimonials-wrapper">
+    <div class="testimonial-card">
+        <img src="img/testimonial-1.jpg" alt="Person 1" />
+        <h2>Jane Doe</h2>
+        <h3>Film Critic</h3>
+        <p>"Absolutely breathtaking production quality. I was immersed from start to finish!"</p>
     </div>
-    <!-- Testimonial End -->
+
+    <div class="testimonial-card">
+        <img src="img/testimonial-2.jpg" alt="Person 2" />
+        <h2>Mark Smith</h2>
+        <h3>Director</h3>
+        <p>"This studio redefines storytelling. Visuals, sound, and pacing—everything is spot on."</p>
+    </div>
+
+    <div class="testimonial-card">
+        <img src="img/testimonial-3.jpg" alt="Person 3" />
+        <h2>Emily Clark</h2>
+        <h3>Producer</h3>
+        <p>"Working with this team was seamless. A truly professional and creative experience."</p>
+    </div>
+
+    <div class="testimonial-card">
+        <img src="img/testimonial-4.jpg" alt="Person 3" />
+        <h2>Emily Clark</h2>
+        <h3>Producer</h3>
+        <p>"Working with this team was seamless. A truly professional and creative experience."</p>
+    </div>
+</div>
+<!-- Testimonial End -->
+
 
     <!-- Contact Start -->
     <div class="contact">
@@ -1033,8 +1091,8 @@
     <div class="blog">
       <div class="container">
         <div class="section-header text-center">
-          <p>Food Blog</p>
-          <h2>Latest From Food Blog</h2>
+          <p>Celeb Blog</p>
+          <h2>Latest From Clebrities</h2>
         </div>
         <div class="row">
           <div class="col-md-6">
