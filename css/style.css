@@ -94,30 +94,7 @@ a:focus {
   max-width: 1366px;
 }
 
-.back-to-top {
-  position: fixed;
-  display: none;
-  background: #fbaf32;
-  width: 44px;
-  height: 44px;
-  text-align: center;
-  line-height: 1;
-  font-size: 22px;
-  right: 15px;
-  bottom: 15px;
-  border-radius: 5px;
-  transition: background 0.5s;
-  z-index: 9;
-}
 
-.back-to-top i {
-  color: #ffffff;
-  padding-top: 10px;
-}
-
-.back-to-top:hover {
-  background: #ffcc00;
-}
 
 /**********************************/
 /*********** Nav Bar CSS **********/
@@ -411,7 +388,7 @@ dialog::backdrop {
   padding: 150px 0 90px 0;
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../img/page-header.jpg);
+    url(../img/bbb.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1005,6 +982,8 @@ dialog::backdrop {
 /*******************************/
 /*********** Team CSS **********/
 /*******************************/
+
+
 .team {
   position: relative;
   width: 100%;
@@ -1012,9 +991,16 @@ dialog::backdrop {
 }
 
 .team .team-item {
-  position: relative;
+  /* position: relative; */
   margin-bottom: 30px;
-  background: #ffffff;
+  background: #ffffff; 
+  position: relative;
+  width: 100%;
+  padding-top: 30%; /* 4:3 aspect ratio */
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .team .team-img {
@@ -1042,7 +1028,6 @@ dialog::backdrop {
   height: 100%;
   top: 0;
   left: 0;
-  display: flex;
   align-items: center;
   justify-content: center;
   transition: 0.5s;
