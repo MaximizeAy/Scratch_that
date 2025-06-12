@@ -484,6 +484,17 @@ dialog::backdrop {
 /*******************************/
 /********* Booking CSS *********/
 /*******************************/
+#booking{
+  position: relative;
+  margin-bottom: 45px;
+  padding: 150px 0 90px 0;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/booking.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .booking {
   position: relative;
   width: 100%;
@@ -982,8 +993,6 @@ dialog::backdrop {
 /*******************************/
 /*********** Team CSS **********/
 /*******************************/
-
-
 .team {
   position: relative;
   width: 100%;
