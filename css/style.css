@@ -1,44 +1,8 @@
-/* .foreground-video { */
-/* position: fixed; or absolute, if within a section */
-/* top: 0;
-left: 0;
-width: 100%;
-height: 100%; */
-/* object-fit: cover; */
-/* z-index: 10; higher than background, lower than interactive UI */
-/* pointer-events: none; so user can still click through it */
-/* } */
-/* 
-.foreground-content {
-position: relative;
-z-index: 20;
-color: white;
-text-align: center;
-margin-top: 20vh;
-font-size: 3rem;
-} */
-/* Responsive tweaks for small screens */
-/* @media (max-width: 768px) {
-  .content {
-    font-size: 6vw;
-    margin-top: 15vh;
-    padding: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .content {
-    font-size: 7vw;
-    margin-top: 10vh;
-  }
-} */
-
 /*******************************/
 /********* General CSS *********/
 /*******************************/
 body {
   color: #f8f8f8;
-  /* background: #121212; */
   font-family: "open sans", sans-serif;
   background: linear-gradient(135deg, #2d2c55, #ff0000);
 }
@@ -96,7 +60,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #b72121;
+  color: aliceblue;
   font-family: "Nunito", sans-serif;
 }
 
@@ -433,64 +397,61 @@ dialog::backdrop {
   }
 }
 
-/*******************************/
-/******* Page Header CSS *******/
-/*******************************/
-.page-header {
-  position: relative;
-  margin-bottom: 45px;
-  padding: 150px 0 90px 0;
-  text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../img/bbb.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+/* *********************************** */
+/* *********************************** */
+/* ********* Header Bar **************/
+/* *********************************** */
+/* *********************************** */
+    .header-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      padding: 20px 30px;
+    }
 
-.page-header h2 {
-  position: relative;
-  color: #fbaf32;
-  font-size: 60px;
-  font-weight: 700;
-}
 
-.page-header a {
-  position: relative;
-  padding: 0 12px;
-  font-size: 20px;
-  text-transform: uppercase;
-  color: #ffffff;
-}
+    .header-bar a {
+      flex: 1;
+      margin: 0 auto;
+      color: aliceblue;
+      font-family: 'Mycustomfonts';
+      font-size: 44px;
+      text-align: center;
+      text-decoration: none;
+    }
 
-.page-header a:hover {
-  color: #ffffff;
-}
 
-.page-header a::after {
-  position: absolute;
-  content: "/";
-  width: 8px;
-  height: 8px;
-  top: -1px;
-  right: -7px;
-  text-align: center;
-  color: #fbaf32;
-}
+    @media (max-width: 600px) {
+      .header-bar h1 {
+        font-size: 30px;
+      }
+    }
 
-.page-header a:last-child::after {
-  display: none;
-}
+     .menu-button {
+      position: absolute;
+      margin-top: 0px;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: transparent;
+      color: white;
+      border: transparent;
+      padding: 8px 16px;
+      border-radius: 16px;
+      cursor: pointer;
+      font-size: 16px;
+    }
 
-@media (max-width: 767.98px) {
-  .page-header h2 {
-    font-size: 35px;
-  }
+    @media (max-width: 600px) {
+      .menu-button {
+        margin-top: 60px;
+        margin-left: 4px;
+        display: flex;
+      }
+    }
 
-  .page-header a {
-    font-size: 18px;
-  }
-}
+
 
 /*******************************/
 /******* Section Header ********/
@@ -631,10 +592,15 @@ dialog::backdrop {
   font-family: cursive;
 }
 
+
+
+
+
+
 /*******************************/
 /********** Menu CSS ***********/
 /*******************************/
-.food {
+.service {
   position: relative;
   width: 100%;
   padding: 90px 0 60px 0;
@@ -642,7 +608,7 @@ dialog::backdrop {
   background: rgba(0, 0, 0, 0.04);
 }
 
-.food .food-item {
+.service .service-item {
   position: relative;
   width: 100%;
   margin-bottom: 30px;
@@ -650,15 +616,15 @@ dialog::backdrop {
   text-align: center;
   background: #393838;
   border-radius: 15px;
-  box-shadow: 0 0 15px #00eaffd6;
   transition: 0.3s;
 }
 
-.food .food-item:hover {
-  box-shadow: none;
+.service .service-item:hover {
+  box-shadow: 0 0 15px #001aff;
+  /* box-shadow: none; */
 }
 
-.food .food-item img {
+.service .service-item img {
   position: relative;
   display: inline-block;
   color: #fbaf32;
@@ -667,14 +633,14 @@ dialog::backdrop {
   margin-bottom: 20px;
   transition: 0.3s;
 }
-.food .food-item img {
+.service .service-item img {
   width: 100px;
 }
-.food .food-item:hover img {
+.service .service-item:hover img {
   color: #ffcc00;
 }
 
-.food .food-item img::after {
+.service .service-item img::after {
   position: absolute;
   content: "";
   width: calc(100% + 20px);
@@ -688,23 +654,23 @@ dialog::backdrop {
   transition: 0.3s;
 }
 
-.food .food-item:hover img::after {
+.service .service-item:hover img::after {
   border: 3px dotted #ffcc00;
   border-right: transparent;
   border-bottom: transparent;
 }
 
-.food .food-item h2 {
+.service .service-item h2 {
   font-size: 30px;
   font-weight: 700;
 }
 
-.food .food-item a {
+.service .service-item a {
   position: relative;
   font-size: 16px;
 }
 
-.food .food-item a::after {
+.service .service-item a::after {
   position: absolute;
   content: "";
   width: 50px;
@@ -715,7 +681,7 @@ dialog::backdrop {
   transition: 0.3s;
 }
 
-.food .food-item a:hover::after {
+.service .service-item a:hover::after {
   width: 100%;
   left: 0;
   background: #ffcc00;
@@ -839,8 +805,6 @@ dialog::backdrop {
 .about .about-text a.btn {
   position: relative;
   margin-top: 15px;
-  border: solid black;
-  background-color: #0077B5;
 }
 
 @media (max-width: 991.98px) {
