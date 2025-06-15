@@ -38,8 +38,56 @@ font-size: 3rem;
 /*******************************/
 body {
   color: #f8f8f8;
-  background: #121212;
+  /* background: #121212; */
   font-family: "open sans", sans-serif;
+  background: linear-gradient(135deg, #2d2c55, #ff0000);
+}
+      /* Gradient eFFECTS */
+.gradient-bg {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  animation: gradientFade 12s infinite;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.g1 {
+  background: linear-gradient(135deg, #2d2c55, #000000);
+  animation-delay: 0s;
+}
+
+.g2 {
+  background: linear-gradient(135deg, #9b2f2f, #16213e);
+  animation-delay: 4.5s;
+}
+
+.g3 {
+  background: linear-gradient(135deg, #2d2c55, #ff0000);
+  animation-delay: 8.5s;
+}
+
+@keyframes gradientFade {
+  0%   { opacity: 0; }
+  10%  { opacity: 1; }
+  30%  { opacity: 1; }
+  40%  { opacity: 0; }
+  100% { opacity: 0; }
 }
 
 h1,
@@ -68,20 +116,26 @@ a:focus {
 }
 
 .btn.custom-btn {
-  padding: 12px 25px;
+  color: aliceblue;
+  background-color: transparent;
+  border: none;
+  border-radius: 40px;
+  padding: 20px 30px;
+  margin-top: 50px;
+  margin-left: 10px;
+  opacity: 0.5;
+  transform: scale(1);
+  transition: all 0.3s ease;
+  cursor: pointer;
   font-family: "Nunito", sans-serif;
   font-size: 16px;
   font-weight: 600;
-  color: #ffffff;
-  background: #fbaf32;
-  border: 2px solid #fbaf32;
-  border-radius: 5px;
-  transition: 0.5s;
 }
 
 .btn.custom-btn:hover {
-  color: #fbaf32;
-  background: transparent;
+  background-color: rgb(124, 116, 116);
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .btn.custom-btn:focus,
@@ -769,15 +823,24 @@ dialog::backdrop {
 
 .about .about-content {
   position: relative;
+  text-align: center;
 }
 
 .about .about-text p {
   font-size: 16px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .about .about-text a.btn {
   position: relative;
   margin-top: 15px;
+  border: solid black;
+  background-color: #0077B5;
 }
 
 @media (max-width: 991.98px) {
@@ -1209,6 +1272,8 @@ dialog::backdrop {
 }
 
 .blog .blog-content {
+  overflow: hidden;
+  transition: max-height 0.5s ease;
   position: relative;
   width: calc(100% - 60px);
   top: -60px;
@@ -1218,6 +1283,10 @@ dialog::backdrop {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
   border-radius: 15px;
   z-index: 2;
+  max-height: 450px;
+}
+.blog-content.expanded {
+  max-height: 1200px;
 }
 
 .blog .blog-content h2.blog-title {
@@ -1243,22 +1312,39 @@ dialog::backdrop {
   margin-right: 5px;
 }
 
+.read-more-btn {
+
+  padding: 12px 25px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  background: #fbaf32;
+  border: 2px solid #fbaf32;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.5s;
+}
 .blog .blog-meta p:last-child {
   margin: 0;
 }
 
 .blog .blog-text {
   position: relative;
+  padding-bottom: 50px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 .blog .blog-text p {
   margin-bottom: 10px;
+  color: black;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
-.blog .blog-item a.btn {
-  margin-top: 10px;
-  padding: 5px 15px;
-}
 
 .blog .pagination .page-link {
   color: #fbaf32;
@@ -1284,6 +1370,7 @@ dialog::backdrop {
     margin: 0 0 5px 0;
   }
 }
+
 
 /*******************************/
 /******* Single Post CSS *******/
